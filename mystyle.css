@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.main{
+    width:78%;
+    background:azura;
+    margin: auto;
+    box-sizing: border-box;
+}
+.div1{
+    border: 2px solid black;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: lightblue;
+    display:  inline-block;
+}
+
+.ar{
+    display:  inline-block;
+}
+.div2{
+    margin-right: 80px;
+    position: relative;
+    padding-top: 15px;
+   
+}
+.div2 img{
+    width: 130px;
+     margin-top: 30px;
+}
+.div3{
+    margin-left: 60px;
+    position: relative;
+    padding-top: 15px;
+   
+}
+.div3 img{
+    width: 120px;
+     margin-top: 40px;
+}
+.table1{
+    width:100%;
+margin:auto;
+}
+/* .table1 table{
+    margin-left:80px;
+    border-spacing: 20px;
+} */
+
+.table1  td {
+    border-style: none;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size:16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+.ab p{
+border: 1px solid black;
+background: lightblue;
+font-weight: bolder;
+font-size: 15px;
+text-align: center;
+padding:15px;
+  }
+
+.pic{
+    border:1px solid black;
+    margin-right:40px;
+    width:120px;
+    height:120px;
+    float:right;
+    /*box-sizing:border-box;*/
+}
+/* .info_details{
+    margin-left:100px;
+    
+} */
+
+.info_details table{
+width:100%;
+margin:auto;
+}
+.info_details td {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    border:0px solid black;
+    padding: 5px;
+    /* border-collapse: collapse; */
+  }
+
+.exams{
+    box-sizing: border-box;
+}
+.exams table{
+    margin:auto;
+    box-sizing: border-box;
+    /* width: ; */
+}
+.exams table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+  }
+
+.subject table{
+    margin:auto;
+    width:100%;
+}
+.subject table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+
+
+.challan table{
+    margin:auto;
+    width:100%;
+}
+.challan table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+
+
+.choices table{
+    margin:auto;
+    width:100%;
+}
+.choices table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+  }
+.choices th {
+background-color:lightblue;
+font-weight: bolder;
+}
+.bds table{
+    margin:auto;
+    width: 100%;
+}
+.bds table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+  }
+  .signature table{
+    width:100%;
+    margin:auto;
+    }
+.signature td {
+    font-family: 'Times New Roman', Times, serif;
+    border:0px solid black;
+    font-size:16px;
+    
+        /* border-collapse: collapse; */
+      }
+
+.thumb td{
+    border:1px solid black;
+}
+.clg_names table{
+    margin:auto;
+    width:100%;
+}
+.clg_names table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+  }
+/* .pinfo{
+    background-color: rgb(164, 164, 184);
+} */
+.pinfo td{
+    /* color:white; */
+    padding: 15px 10px 12px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:18px;
+    border:1px solid black;
+    font-size:16px;
+    background-color: aliceblue;
+    
+}
+  
+.pinfo {
+    border:1px solid black;
+    border-collapse:collapse;
+    /* font-size:30px; */
+    
+}
+
+  

@@ -1,0 +1,206 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.7
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: Dec 10, 2021 at 02:35 PM
+-- Server version: 10.3.25-MariaDB
+-- PHP Version: 7.3.33
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `bmcqtaco_admissionform`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tehsils`
+--
+
+CREATE TABLE `tehsils` (
+  `id` int(11) NOT NULL,
+  `districts_id` int(11) NOT NULL,
+  `tehsil_name` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tehsils`
+--
+
+INSERT INTO `tehsils` (`id`, `districts_id`, `tehsil_name`) VALUES
+(1, 1, 'PANJPAI SUB-TEHSIL'),
+(2, 1, 'QUETTA CITY'),
+(3, 1, 'QUETTA SADDAR'),
+(4, 2, 'BARSHORE SUB-TEHSIL'),
+(5, 2, 'HURRAMZAI'),
+(6, 2, 'KAREZAT'),
+(7, 2, 'PISHIN'),
+(8, 2, 'SARANAN'),
+(9, 3, 'CHAMAN'),
+(10, 3, 'DOBANDI SUB-TEHSIL'),
+(11, 3, 'GULISTAN'),
+(12, 3, 'KILLA ABDULLAH'),
+(13, 10, 'ASHWAT SUB-TEHSIL'),
+(14, 10, 'KASHATU SUB-TEHSIL'),
+(15, 10, 'QAMAR DIN KAREZ'),
+(16, 10, 'SAMBAZA SUB-TEHSIL'),
+(17, 10, 'ZHOB'),
+(18, 16, 'BARKHAN'),
+(19, 15, 'DRUG'),
+(20, 15, 'KINGRI'),
+(21, 15, 'MUSAKHEL'),
+(22, 12, 'BADINI SUB-TEHSIL'),
+(23, 12, 'KANMETHARZAI SUB-TEHSIL'),
+(24, 12, 'KILLA SAIFULLAH'),
+(25, 12, 'LOIBAND'),
+(26, 12, 'MUSLIM BAGH'),
+(27, 12, 'SHINKI SUB-TEHSIL'),
+(28, 13, 'DUKI'),
+(29, 13, 'LORALAI'),
+(30, 13, 'MEKHTAR'),
+(31, 11, 'SHEERANI SUB-TEHSIL'),
+(32, 20, 'KUTMANDAI SUB-TEHSIL'),
+(33, 20, 'SANGAN SUB-TEHSIL'),
+(34, 20, 'SIBI'),
+(35, 23, 'HARNAI'),
+(36, 23, 'KHOAST SUB-TEHSIL'),
+(37, 23, 'SHARIGH'),
+(38, 22, 'SINJAWI SUB-TEHSIL'),
+(39, 22, 'ZIARAT'),
+(40, 24, 'GRISINI SUB-TEHSIL'),
+(41, 24, 'KAHAN'),
+(42, 24, 'KOHLU'),
+(43, 24, 'MAWAND'),
+(44, 24, 'TAMBOO'),
+(45, 21, 'BAIKER SUB-TEHSIL'),
+(46, 21, 'DERA BUGTI'),
+(47, 21, 'LOTI SUB-TEHSIL'),
+(48, 21, 'MALAM SUB-TEHSIL'),
+(49, 21, 'PHELAWAGH'),
+(50, 21, 'PIR KOH SUB-TEHSIL'),
+(51, 21, 'SANGSILLAH SUB-TEHSIL'),
+(52, 21, 'SUI'),
+(53, 5, 'BABA KOT'),
+(54, 5, 'CHATTAR SUB-TEHSIL'),
+(55, 5, 'DERA MURAD JAMALI'),
+(56, 5, 'TAMBOO'),
+(57, 6, 'GANDAKHA'),
+(58, 6, 'JHAT PAT'),
+(59, 6, 'USTA MOHAMMAD'),
+(60, 7, 'BALANARI SUB-TEHSIL'),
+(61, 7, 'DHADAR'),
+(62, 7, 'KHATTAN SUB-TEHSIL'),
+(63, 7, 'MACH SUB-TEHSIL'),
+(64, 7, 'SANNI SUB-TEHSIL'),
+(65, 8, 'GANDAWA'),
+(66, 8, 'JHAL MAGSI'),
+(67, 8, 'MIRPUR SUB-TEHSIL'),
+(68, 9, 'SOHBATPUR'),
+(69, 9, 'FARIDABAD'),
+(70, 9, 'SANHRI'),
+(71, 25, 'GAZG SUB-TEHSIL'),
+(72, 25, 'JOHAN SUB-TEHSIL'),
+(73, 25, 'KALAT'),
+(74, 25, 'MANGOCHAR'),
+(75, 25, 'SURAB'),
+(76, 27, 'DASHT'),
+(77, 27, 'KHAD KOOCHA SUB-TEHSIL'),
+(78, 27, 'KIRDGAP SUB-TEHSIL'),
+(79, 27, 'MASTUNG'),
+(80, 26, 'ARANJI SUB-TEHSIL'),
+(81, 26, 'GRESHEK SUB-TEHSIL'),
+(82, 26, 'GRASHA SUB-TEHSIL'),
+(83, 26, 'KARAKH SUB-TEHSIL'),
+(84, 26, 'KHUZDAR'),
+(85, 26, 'MOOLA SUB-TEHSIL'),
+(86, 26, 'NAL TEHSIL'),
+(87, 26, 'ORNACH SUB-TEHSIL'),
+(88, 26, 'SAROONA SUB-TEHSIL'),
+(89, 26, 'WADH'),
+(90, 26, 'ZEHRI'),
+(91, 28, 'AWARAN'),
+(92, 28, 'GISHKORE'),
+(93, 28, 'JHAL JAO'),
+(94, 28, 'KORAK JAHOO'),
+(95, 28, 'MASHKAI'),
+(96, 34, 'KHARAN'),
+(97, 34, 'SAR-KHARAN'),
+(98, 34, 'TOHUMULK SUB-TEHSIL'),
+(99, 33, 'BESIMA'),
+(100, 33, 'MASHKHEL'),
+(101, 33, 'NAG SUB-TEHSIL'),
+(102, 33, 'SHAHGORI SUB-TEHSIL'),
+(103, 33, 'WASHUK'),
+(104, 29, 'BELA'),
+(105, 29, 'DUREJI'),
+(106, 29, 'GADDANI'),
+(107, 29, 'HUB'),
+(108, 29, 'KANRAJ'),
+(109, 29, 'LAKHRA'),
+(110, 29, 'LIARI SUB-TEHSIL'),
+(111, 29, 'SONMIANI/WINDER'),
+(112, 29, 'UTHAL'),
+(113, 17, 'BALNIGOR SUB-TEHSIL'),
+(114, 17, 'BULEDA SUB-TEHSIL'),
+(115, 17, 'DASHT SUB-TEHSIL'),
+(116, 17, 'HOSHAB SUB-TEHSIL'),
+(117, 17, 'ZAMURAN SUB-TEHSIL'),
+(118, 17, 'MAND'),
+(119, 17, 'TUMP'),
+(120, 17, 'TURBAT'),
+(121, 19, 'GWADAR'),
+(122, 19, 'JIWANI'),
+(123, 19, 'ORMARA'),
+(124, 19, 'PASNI'),
+(125, 19, 'SUNTSAR SUB-TEHSIL'),
+(126, 18, 'GICHK SUB-TEHSIL'),
+(127, 18, 'GOWARGO'),
+(128, 18, 'PANJGUR'),
+(129, 18, 'PAROME');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tehsils`
+--
+ALTER TABLE `tehsils`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `districts_id` (`districts_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tehsils`
+--
+ALTER TABLE `tehsils`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=130;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `tehsils`
+--
+ALTER TABLE `tehsils`
+  ADD CONSTRAINT `tehsils_ibfk_1` FOREIGN KEY (`districts_id`) REFERENCES `districts` (`id`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
